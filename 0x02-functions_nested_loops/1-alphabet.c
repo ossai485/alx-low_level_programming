@@ -1,8 +1,8 @@
 #include "stdio.h"
 /**
- * main Entry point
+ * print_alphabet - a function that prints the alphabet, in lowercast
  *
- * Return: 0
+ * Return: Always 0 (Succes)
  */
 void print_alphabet(void)
 {
