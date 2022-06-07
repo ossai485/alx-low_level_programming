@@ -1,17 +1,16 @@
 #include "stdio.h"
+#include "main.h"
 /**
- * main - Entry point
+ * print_alphabet - a function that prints the alphabet, in lowercast
  *
- * Return: 0
+ * Return: Always 0 (Succes)
  */
-int main(void)
+void print_alphabet(void)
 {
-char *sh = "_putchar";
-while (*sh)
+int n;
+for (n = 'a'; n <= 'z'; n++)
 {
-putchar(*sh);
-sh++;
+putchar(n);
 }
 putchar('\n');
-return (0);
 }
