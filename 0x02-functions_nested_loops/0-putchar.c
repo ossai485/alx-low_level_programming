@@ -1,9 +1,5 @@
 #include <unistd.h>
-<<<<<<< HEAD
 #include main.h
-=======
-#include "main.h"
->>>>>>> 660271511bbee13b6e68e22bdc6a4820b88b575a
 /**
  * main - Entry point
  *
