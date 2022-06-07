@@ -1,15 +1,15 @@
-#include "stdio.h"
+#include "main.h"
 /**
- * print_alphabet - a function that prints the alphabet, in lowercast
- *
- * Return: Always 0 (Succes)
+ * print_alphabet - prints the english alphabet from a-z.
+ * Return: Always 0.
  */
 void print_alphabet(void)
 {
-int n;
-for (n = 'a'; n <= 'z'; n++)
-{
-putchar(n);
-}
-putchar('\n');
+	char c;
+
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		_putchar(c);
+	}
+	_putchar('\n');
 }
