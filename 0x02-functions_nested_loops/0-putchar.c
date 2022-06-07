@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "_putchar.h"
 /**
  * main - Entry point
  *
@@ -6,12 +6,8 @@
  */
 int main(void)
 {
-char *z = "_putchar";
-while (*z)
-{
-_putchar(*z);
-z++;
-}
+char z = "_putchar";
+_putchar(z);
 _putchar('\n');
 return (0);
 }
