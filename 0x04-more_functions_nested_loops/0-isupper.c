@@ -1,11 +1,9 @@
 #include "main.h"
-#include <ctype.h>
+
 /**
- * _isupper - function that checks for alphabetic character
- *
- * @c: return char type
- *
- * Return: return 0 on success and 1 on fail
+ * _isupper - a function that checks for uppercase character
+ * @c: input
+ * Return: 1 if c is uppercase, 0 otherwise
  */
 int _isupper(int c)
 {
