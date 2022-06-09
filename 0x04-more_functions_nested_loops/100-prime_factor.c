@@ -8,18 +8,19 @@ ble File  10 lines (10 sloc)  139 Bytes
  */
 int main(void)
 {
-	long x, y;
+	long num = 612852475143;
+	long divisor = 2;
+	long larg_prim = 0;
 
-	x = 612852475143;
-
-	for (y = 2; x > y; y++)
+	while (num != 1)
 	{
-		while (x % y == 0)
+		if (num % divisor == 0)
 		{
-			x = x / y;
+			num = num / divisor;
+			larg_prim = divisor;
 		}
+		divisor += 1;
 	}
-	printf("%lu", y);
-	putchar('\n');
+	printf("%ld\n", larg_prim);
 	return (0);
 }
