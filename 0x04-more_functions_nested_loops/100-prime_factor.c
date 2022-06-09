@@ -1,6 +1,5 @@
-ble File  10 lines (10 sloc)  139 Bytes
-   
 #include <stdio.h>
+
 /**
  * main - prints prime factors of 612852475143
  *
@@ -8,19 +7,18 @@ ble File  10 lines (10 sloc)  139 Bytes
  */
 int main(void)
 {
-	long num = 612852475143;
-	long divisor = 2;
-	long larg_prim = 0;
+	long x, y;
 
-	while (num != 1)
+	x = 612852475143;
+
+	for (y = 2; x > y; y++)
 	{
-		if (num % divisor == 0)
+		while (x % y == 0)
 		{
-			num = num / divisor;
-			larg_prim = divisor;
+			x = x / y;
 		}
-		divisor += 1;
 	}
-	printf("%ld\n", larg_prim);
+	printf("%lu", y);
+	putchar('\n');
 	return (0);
 }
