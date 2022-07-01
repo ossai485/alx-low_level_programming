@@ -80,7 +80,7 @@ int get_digit(char c)
 
 	if (digit < 0 || digit > 9)
 	{
-		putchar('\n');
+		printf("Error\n");
 		exit(98);
 	}
 
@@ -122,7 +122,7 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 	{
 		if (*mult < '0' || *mult > '9')
 		{
-			putchar('\n');
+			printf("Error\n");
 			exit(98);
 		}
 
@@ -194,7 +194,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		putchar('\n');
+		printf("Error\n");
 		exit(98);
 	}
 
